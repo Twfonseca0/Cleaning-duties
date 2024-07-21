@@ -1,0 +1,24 @@
+.listStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.day-section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.day-section p {
+    margin: 5px 0;
+}
+.day-section input {
+    display: block;
+    margin: 10px 0;
+}
+.day-section button {
+    margin-right: 10px;
+}
+

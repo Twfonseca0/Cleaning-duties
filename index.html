@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Captain Cleaning</title>
+</head>
+<body>
+    <header>
+        <div class="pageNameStyle">
+
+        </div>
+        <div class="logoStyle">
+
+        </div>
+    </header>
+    <section class="howToUseStyle">
+        <p>Instructions:</p>
+        <li class="listStyle">
+            <i> 1. Enter the name of the worker in the text box for the respective day.
+            </i>
+            <i>2. Click the "Add Worker" button to add the worker's name to the list.</i>
+            <i>3. Repeat steps 1 and 2 for all workers of the shift for that day.</i>
+            <i>4. After entering all names, click the "Sort" button to randomly assign a worker.</i>
+            <i>5. The randomly selected worker's name will be displayed below the buttons.</i>
+        </li>
+    </section>
+    <section class="dutiesArea">
+        <div class="day-section">
+            <p>Monday</p>
+            <p>Hood vents: remove from the line, in the dish area carefully scrub, run through the dishwasher and let dry before putting it back.</p>
+            <input id="mondayInpt" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerMonday()">Sort</button>
+            <button onclick="addMondayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+        <div class="day-section">
+            <p>Tuesday</p>
+            <p>Dry storage: clean, sanitize and organize shelving, sweep and mop. Wipe downstairs shelving.</p>
+            <input id="tuesdayInpt" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerTuesday()">Sort</button>
+            <button onclick="addTuesdayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+        <div class="day-section">
+            <p>Wednesday</p>
+            <p>Behind equipment: pull equipment forward, sweep and mop the floor. Degrease as necessary.</p>
+            <input id="wednesdayInpt" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerWednesday()">Sort</button>
+            <button onclick="addWednesdayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+        <div class="day-section">
+            <p>Thursday</p>
+            <p>Dishpit: pull out supplies from under sink, mop, wipe walls and clean top of dishwasher.</p>
+            <input id="thursdayInpt" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerThrusday()">Sort</button>
+            <button onclick="addThursdayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+        <div class="day-section">
+            <p>Friday</p>
+            <p>Ovens: Degrease doors, interiors. Remove shelves, soak in degreaser, scrub and clean.</p>
+            <input id="fridayInpt" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerFriday()">Sort</button>
+            <button onclick="addFridayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+        <div class="day-section">
+            <p>Saturday</p>
+            <p>Garbage Cans: remove any food residue from inside and sides of the cans. Bleach inside out, clean with water and let it dry.</p>
+            <input id="saturdayInput" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerSaturday()">Sort</button>
+            <button onclick="addSaturdayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+        <div class="day-section">
+            <p>Sunday</p>
+            <p>Prep-fridge: clean and organize prep fridge. Change the bottles container if necessary.</p>
+            <input id="sundayInpt" type="text" placeholder="Worker's name">
+            <button onclick="sortWorkerSunday()">Sort</button>
+            <button onclick="addSundayWorkers()">Add Worker</button>
+            <p class="worker-name"></p>
+        </div>
+    </section>
+    <footer class="footerStyle">
+
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>
+
+
+<!--
+
+    Ideia geral : Um sistema no qual você adiciona o nome dos trabalhadores no turno e o sistema atribui alguem para a limpeza semanal randomicamente
+
+    sobre os trabalhadores: os trabalhadores serão inseridos um a um em um array para serem sorteados randomicamente
+
+    sobre as tarefas : cada tarefa vai ser conectada a um dia da semana , os dias da semana serão um objeto com as seguintes propriedades- trabalhador, tarefa. a propriedade trabalhador recebe o valor do nome de quem ira executar a tarefa e tarefa é o nome dad tarefa a ser executada.
+
+    --------------------------------------------------------------------------------------------------------------------
+    como vai funcionar : Selecione o dia da semana na lista, adicione os trabalhadores um a um , eles serão atribuidos a um array da semana onde sera selecionado um dos membros randomicamente.
+
+    objeto da semana :    segunda{tarefa:limpar o forno, trabalhador: pessoa , trabalhadoresPool:[geral aqui]}
+
+
+    botão para adicionar os tabalhadores:  verificar o dia da semana selecionado na lista e fazer o push no array relativo a essa lista. 
+
+    botao se sorteio: verifica todas os dias da semana, randomizar um trabalhador pra cada dia e atribuir a tarefa.
+
+
+-->
