@@ -4,17 +4,37 @@ body {
     background-color: white;
     color: #333;
 }
+
+.headerStyle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #00BFFF;
+    width: 102%;
+    margin: -10px 0px 25px -10px;
+}
+
+
 section {
     width: 80%;
     margin: 0 auto;
 }
+
 .instructions {
-    background-color: #00BFFF;
-    color: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
-    height: 180px;
+
+}
+
+.instructionStyletxt{
+    background-color: #00BFFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: -15px 0px 10px -15px;
+    width: 100%;
+    padding: 15px;
 }
 
 .listStyle{
@@ -47,7 +67,7 @@ section {
 }
 
 .btnContainer{
-    margin: 0px 25% 0px 35%; 
+    margin: 0px 10% 0px 25%; 
 }
 
 .day-section button {
