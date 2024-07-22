@@ -8,13 +8,16 @@ body {
 .headerStyle{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px;
     background-color: #00BFFF;
     width: 102%;
     margin: -10px 0px 25px -10px;
 }
 
+.logoStyle{
+    margin-left: -25px;
+}
 
 section {
     width: 80%;
